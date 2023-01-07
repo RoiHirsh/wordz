@@ -1,0 +1,183 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #62ab5e;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.letter {
+  display: inline-block;
+  border: 1px solid rgb(114, 100, 100);
+  border-radius: 5px;
+  width: 60px;
+  height: 60px;
+  font-size: 40px;
+  color: white;
+  background-color:#62ab5e;
+  text-align: center;
+  line-height: 60px; 
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 0px;
+}
+
+.letter[disabled] {
+  pointer-events: none;
+  color: #62ab5e;
+  background-color: lightyellow;
+}
+
+.letter:hover {
+  cursor: pointer;
+  color: #62ab5e;
+  background-color: lightyellow;
+}
+
+.hebWord {
+  margin-bottom: 10px;
+  margin-top: 0px;
+  font-size: 60px;
+}
+
+.character {
+  font-size: 60px;
+  color:#1b5218
+}
+
+.character-clicked {
+  font-size: 60px;
+  color:aqua;
+}
+
+.engWord {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+
+.pronunciation {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+}
+
+.keyboard-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: 10vw;
+  margin-left: 10vw;
+}
+
+.nextword {
+  height: 40px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nextwordbutton, .hearagain {
+  display: inline-block;
+  background: #62ab5e;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.nextwordbutton:hover {
+  color: #f6f6f6;
+  background:#62ab5e;
+}
+
+.hearagain {
+  float: left;
+  margin-left: 20%;
+}
+
+.nextwordbutton {
+  float: right;
+  margin-right: 20%;
+  background-color: #ffffff;
+  color: #62ab5e;
+}
+
+@media (max-width: 1200px) {
+  .letter {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px; 
+  }
+  .hebWord {
+    font-size: 30px;
+  }
+  .keyboard-wrapper {
+    margin-right: 5vw;
+    margin-left: 5vw;
+  }
+  .pronunciation {
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .engWord {
+    font-size: 30px;
+  }
+}
+
+.overlay-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+  background-color:rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.overlay-popup p {
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+  margin-top: 5px;
+}
+
+.overlay-popup h1 {
+  color: #ffffff;
+  font-size: 48px;
+  margin-bottom: 5px;
+}
+
+.overlay-popup button {
+  padding: 16px;
+  font-size: 24px;
+  border: none;
+  border-radius: 3px;
+  background-color:#62ab5e;
+  color: white;
+  cursor: pointer;
+}
+
+.overlay-popup button:hover {
+  background-color:#ffffff;
+  color:#62ab5e;
+}
+
