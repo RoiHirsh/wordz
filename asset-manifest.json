@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/wordz/static/css/main.2e3a77a7.css",
+    "main.js": "/wordz/static/js/main.a57195aa.js",
+    "static/js/787.92cd18d3.chunk.js": "/wordz/static/js/787.92cd18d3.chunk.js",
+    "index.html": "/wordz/index.html",
+    "main.2e3a77a7.css.map": "/wordz/static/css/main.2e3a77a7.css.map",
+    "main.a57195aa.js.map": "/wordz/static/js/main.a57195aa.js.map",
+    "787.92cd18d3.chunk.js.map": "/wordz/static/js/787.92cd18d3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2e3a77a7.css",
+    "static/js/main.a57195aa.js"
+  ]
+}
